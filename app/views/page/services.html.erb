@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+<title>DreamzBank | Services</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stylesheets/foundation.min.css">
+<link rel="stylesheet" href="stylesheets/superfish.css">
+<link rel="stylesheet" href="stylesheets/stylesheet.css">
+<link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,300|Droid+Serif:400,300' rel='stylesheet' type='text/css'>
+<script src="javascripts/vendor/custom.modernizr.js"></script>
+<script>
+Modernizr.load({
+    // test if browser understands media queries
+    test: Modernizr.mq('only all'),
+    // if not load ie8-grid
+    nope: 'stylesheets/ie8-grid-foundation-4.css'
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="stylesheets/ie-fixes.css">
+<![endif]-->
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <div class="row">
+      <div class="columns large-12  header-inner"> <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a> </div>
+      <div class="columns large-12">
+        <nav>
+          <section>
+            <ul class="sf-menu large-12">
+              <li class="active"><a href="home.html.erb">Home</a></li>
+              <li><a href="about.html.erb">About us</a></li>
+              <li><a href="blog.html.erb">Blog</a></li>
+              <li><a href="gallery.html.erb">Gallery</a></li>
+              <li class="has-dropdown"><a href="services.html">Services</a>
+                <ul class="dropdown">
+                  <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Dropdown Level 2a</a></li>
+                      <li><a href="#">Dropdown Level 2b</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Dropdown Level 1b</a></li>
+                  <li><a href="#">Dropdown Level 1c</a></li>
+                  <li><a href="#">Dropdown Level 1d</a></li>
+                  <li><a href="#">See all &rarr;</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html.erb">Contact Us</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns large-12 small-top-menu">
+        <div class="row">
+          <div class="columns large-12 plr0 top-nav">
+            <form name="dropdown" class="dropdown" action="#">
+              <nav>
+                <section>
+                  <select name="selected" id="target" accesskey="E" onChange="goToNewPage(document.dropdown.selected)">
+                    <option value="index.html.erb">home</option>
+                    <option value="about.html.erb">about us</option>
+                    <option value="blog.html.erb">blog</option>
+                    <option value="gallery.html.erb">gallery</option>
+                    <option value="services.html.erb">services</option>
+                    <option value="contact.html.erb">contact us</option>
+                  </select>
+                </section>
+              </nav>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row content-wrapper">
+    <div class="columns large-12">
+      <div class="row">
+        <div class="columns large-4 content sidebar">
+          <h1 class="page-title services">Why Choose us</h1>
+          <ul>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+          </ul>
+        </div>
+        <div class="columns large-8">
+          <h1 class="page-title">Our Services</h1>
+          <div class="row">
+            <div class="columns large-6">
+              <div class="service-box-page">
+                <p><img src="images/car1.jpg" alt=""></p>
+                <h4>Service Title</h4>
+                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet</p>
+              </div>
+            </div>
+            <div class="columns large-6">
+              <div class="service-box-page">
+                <p><img src="images/car2.jpg" alt=""></p>
+                <h4>Service Title</h4>
+                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="columns large-6">
+              <div class="service-box-page">
+                <p><img src="images/car2.jpg" alt=""></p>
+                <h4>Service Title</h4>
+                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet</p>
+              </div>
+            </div>
+            <div class="columns large-6">
+              <div class="service-box-page">
+                <p><img src="images/car1.jpg" alt=""></p>
+                <h4>Service Title</h4>
+                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="row">
+      <div class="columns large-12 footer-inner">
+        <div class="row">
+          <div class="columns large-3 box">
+            <div class="">
+              <h2 class="footer-title">Resources</h2>
+              <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="gallery.html.erb">gallery</a></li>
+                <li><a href="#">faqs</a></li>
+                <li><a href="contact.html.erb">contact us</a></li>
+                <li><a href="#">testimonials</a></li>
+                <li><a href="blog.html.erb">blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="columns large-3 box">
+            <div>
+              <h2 class="footer-title">links </h2>
+              <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="gallery.html.erb">gallery</a></li>
+                <li><a href="#">faqs</a></li>
+                <li><a href="contact.html.erb">contact us</a></li>
+                <li><a href="#">testimonials</a></li>
+                <li><a href="blog.html.erb">blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="columns large-3 box">
+            <div>
+              <h2 class="footer-title">follow us</h2>
+              <ul>
+                <li><a href="#" class="media tweeter"></a>Follow us on twitter</li>
+                <li><a href="#" class="media youtube"></a>Follow us on youtube</li>
+                <li><a href="#" class="media facebook"></a>Follow us on facebook</li>
+                <li><a href="#" class="media gmail"></a>Follow us on google plus</li>
+              </ul>
+            </div>
+          </div>
+          <div class="columns large-3 box">
+            <div>
+              <h2 class="footer-title">Contact us</h2>
+              <p>255, Willson Street,Caulfield, 122211, Melbourne</p>
+              <p><b>Tel:</b> (122)3456789, (121)3456079, (121)2341234</p>
+              <p><b>Fax:</b> (121)5647289, (122)34526589</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="credit-row">
+    <div class="row">
+      <div class="columns large-11 credit">&copy; 2045 All rights reserved by <a href="#">DreamzBank.</a> Design by: <a href="http://topwebsitetemplates.org">topwebsitetemplates.org</a></div>
+      <div class="columns large-1"><img src="images/toparrow.png" alt="" class="scrollToTop"></div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.js"></script>
+<script>
+Modernizr.load({
+    test: Modernizr.placeholder,
+    nope: 'js/placeholder.min.js'
+});
+
+function goToNewPage() {
+    if (document.getElementById('target').value) {
+        window.location.href = document.getElementById('target').value;
+    }
+}
+</script>
+<script>
+$(document).ready(function () {
+    $('ul.sf-menu').superfish({
+        animation: {
+            height: 'show'
+        },
+        delay: 400
+    });
+    $("img.scrollToTop").click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, "slow");
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+
+<body>
+<div class="wrapper">
+  <div class="header">
+    <div class="row">
+      <div class="columns large-12  header-inner"> <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a> </div>
+      <div class="columns large-12">
+
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="row">
+        <div class="columns large-12">
+          <div class="row flexslider-row">
+            <div class="columns large-12">
+              <div class="flexslider">
+                <ul class="slides">
+                  <li><img src="images/slide1.jpg" alt=""></li>
+                  <li><img src="images/slide2.jpg" alt=""></li>
+                  <li><img src="images/slide3.jpg" alt=""></li>
+                  <li><img src="images/slide4.jpg" alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tagline-row">
+      <div class="row tagline">
+        <div class="columns large-12">
+          <h2 class="center">Tincidunt. ac urna urna facilisis etiam platea ac phasellus vut pulvinar dolor porta augue montes odio dapibus elementum augue ultricies quis.</h2>
+        </div>
+      </div>
+    </div>
+    <div class="service-box">
+      <div class="row service">
+        <div class="columns large-4">
+          <div class="box">
+            <p><img src="images/threeup1.jpg" alt="" class="service-img"></p>
+            <h1>Lorem ipsum sit dolor esm</h1>
+            <p>cum magna diam Duis amagna augue natoque odion nisi sed magna nascetur turpis inet sed parturient cum velit lacus Magna facilisis et cursus montes Turpisinet magnis parturient turpis magna turpis habitasse integ ultricies odion adipiscing eros nisi nunc aliquet lorem ipsum sites dolor esme turpis magna augue odio nisi phasellus pulvinar </p>
+          </div>
+        </div>
+        <div class="columns large-4">
+          <div class="box">
+            <p><img src="images/threeup2.jpg" alt="" class="service-img"></p>
+            <h1>Phasell pulvinar magna</h1>
+            <p>cum magna diam Duis amagna augue natoque odion nisi sed magna nascetur turpis inet sed parturient cum velit lacus Magna facilisis et cursus montes Turpisinet magnis parturient turpis magna turpis habitasse integ ultricies odion adipiscing eros nisi nunc aliquet lorem ipsum sites dolor esme turpis magna augue odio nisi phasellus pulvinar </p>
+          </div>
+        </div>
+        <div class="columns large-4">
+          <div class="box">
+            <p><img src="images/threeup3.jpg" alt="" class="service-img"></p>
+            <h1>Lorem ipsum sit dolor esm</h1>
+            <p>cum magna diam Duis amagna augue natoque odion nisi sed magna nascetur turpis inet sed parturient cum velit lacus Magna facilisis et cursus montes Turpisinet magnis parturient turpis magna turpis habitasse integ ultricies odion adipiscing eros nisi nunc aliquet lorem ipsum sites dolor esme turpis magna augue odio nisi phasellus pulvinar </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-row">
+      <div class="row">
+        <div class="columns large-11">
+          <div class="testimonial flexcar">
+            <ul class="slides">
+              <li>
+                <p>Tincidunt. Ac urna urna facilisis etiam platea ac, phasellus, vut pulvinar? Dolor! Porta augue. Montes odio dapibus Elementum augue ultricies quis ridiculus aliquam vut, dis nunc diam! Arcu aliquet odio in. Eu sed et mauris tincidunt. Ultricies. Massa egestas, odio et arcu egestas egestas integer, urna cras nunc egestas, lorem no Facilisis enim cum nascetur placerat magna magna cursus natoque velit porttitor turpis rcu ac vel natoque enim dictumst urna phasellus tincidunt aliquet Tincidunt urna urna facilisis etiam platea ac, phasellus, vut pulvinar? Dolor! Porta augue. Montes odio dapibus? Elementum augue ultricies quis. Ac ridiculus, aliquam,</p>
+              </li>
+              <li>
+                <p>cum magna diam Duis amagna augue natoque odion nisi sed magna nascetur turpis inet sed parturient cum velit lacus Magna facilisis et cursus montes Turpisinet magnis parturient turpis magna turpis habitasse integ ultricies odion adipiscing eros nisi nunc aliquet lorem ipsum sites dolor esme </p>
+              </li>
+              <li>
+                <p>Massa egestas, odio et arcu egestas egestas integer, urna cras nunc egestas cum magna diam Duis amagna augue natoque odion nisi sed magna nascetur turpis inet sed parturient cum velit lacus Magna facilisis et cursus montes Turpisinet magnis parturient turpis magna turpis habitasse integ ultricies odion adipiscing eros nisi nunc aliquet lorem ipsum sites dolor esme </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="credit-row">
+      <div class="row">
+        <div class="columns large-11 credit">&copy; 2045 All rights reserved by <a href="#">DreamzBank.</a> Design by: <a href="http://topwebsitetemplates.org">topwebsitetemplates.org</a></div>
+        <div class="columns large-1"><img src="images/toparrow.png" alt="" class="scrollToTop"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/slider/jquery.flexslider.js"></script>
+<script>
+    Modernizr.load({
+        test: Modernizr.placeholder,
+        nope: 'js/placeholder.min.js'
+    });
+
+    function goToNewPage() {
+        if (document.getElementById('target').value) {
+            window.location.href = document.getElementById('target').value;
+        }
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $('ul.sf-menu').superfish({
+            animation: {
+                height: 'show'
+            },
+            delay: 400
+        });
+        $("img.scrollToTop").click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, "slow");
+        });
+        $('.flexslider').flexslider();
+        $('.flexcar').flexslider();
+    });
+</script>
+</body>

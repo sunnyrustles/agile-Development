@@ -1,0 +1,93 @@
+
+<body>
+<div class="wrapper">
+
+  <div class="row content-wrapper">
+    <div class="columns large-12">
+      <div class="row">
+        <div class="columns large-8 content">
+          <h1 class="page-title">About Us</h1>
+          <div>
+            <h2 class="sub-title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis</h2>
+          </div>
+          <ul class="row">
+            <li class="columns large-4">
+              <div class="img-wrapper">
+                <p><img src="images/redwoman.jpg" alt="" class="th about-image"> 
+              </div>
+              </p>
+              <h3 class="employer-name">Rebecca Traver</h3>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat porro voluptatem</p>
+            </li>
+            <li class="columns large-4">
+              <div class="img-wrapper">
+                <p><img src="images/man.jpg" alt="" class="th about-image"></p>
+              </div>
+              <h3 class="employer-name">NATHELIAN</h3>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat volupt porro atem</p>
+            </li>
+            <li class="columns large-4">
+              <div class="img-wrapper">
+                <p><img src="images/youngwoman.jpg" alt="" class=" th about-image"></p>
+              </div>
+              <h3 class="employer-name">Shamitha S Rao</h3>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat porro voluptatem</p>
+            </li>
+          </ul>
+        </div>
+        <div class="columns sidebar large-4 ">
+          <h1 class="page-title">Our Acheivements</h1>
+          <ul>
+            <li><a href="#">dolorem ipsum quia dolor sit amet</a></li>
+            <li><a href="#">sed quia non numquam eius modi tempora </a></li>
+            <li><a href="#">dolorem ipsum quia dolor sit amet</a></li>
+            <li><a href="#">sed quia non numquam eius modi tempora </a></li>
+            <li><a href="#">dolorem ipsum quia dolor sit amet</a></li>
+            <li><a href="#">sed quia non numquam eius modi tempora </a></li>
+            <li><a href="#">dolorem ipsum quia dolor sit amet</a></li>
+            <li><a href="#">sed quia non numquam eius modi tempora </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="credit-row">
+    <div class="row">
+      <div class="columns large-11 credit">&copy; 2045 All rights reserved by <a href="#">DreamzBank.</a> Design by: <a href="http://topwebsitetemplates.org">topwebsitetemplates.org</a></div>
+      <div class="columns large-1"><img src="images/toparrow.png" alt="" class="scrollToTop"></div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.js"></script>
+<script>
+Modernizr.load({
+    test: Modernizr.placeholder,
+    nope: 'js/placeholder.min.js'
+});
+
+function goToNewPage() {
+    if (document.getElementById('target').value) {
+        window.location.href = document.getElementById('target').value;
+    }
+}
+</script>
+<script>
+$(document).ready(function () {
+    $('ul.sf-menu').superfish({
+        animation: {
+            height: 'show'
+        },
+        delay: 400
+    });
+    $("img.scrollToTop").click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, "slow");
+    });
+});
+</script>
+</body>

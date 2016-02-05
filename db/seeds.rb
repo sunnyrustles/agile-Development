@@ -16,6 +16,7 @@ include Faker
  #     description: Lorem.paragraphs(10)
  # )
 
+=begin
   User.create(
 
           email: Faker::Internet.email,
@@ -25,6 +26,7 @@ include Faker
           #updated_at: Faker::Date.between(350.days.ago, Date.today)
           #username: Faker::Internet.user_name
     )
+=end
 
  # Profile.create( )
 

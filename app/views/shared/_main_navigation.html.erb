@@ -2,7 +2,7 @@
   <div class="header">
 
 <div class="row">
-  <div class="columns large-12  header-logo"> <a href="index.html"> <%= image_tag("logo.png", alt:"") %></a> </div>
+  <div class="columns large-12  header-logo"> <a href="home.html"> <%= image_tag("logo.png", alt:"") %></a> </div>
   <div class="columns large-12">
 
 
@@ -15,7 +15,7 @@
 
           <li><%= link_to 'HOME', page_home_path %></li>
           <li><%= link_to 'ABOUT US' , page_about_path%></li>
-
+          <li><%= link_to 'Login' , new_user_session_path%></li>
           <li><%= link_to 'PROFILE' , page_profile_path%></li>
 
             <ul class="dropdown">

@@ -1,0 +1,96 @@
+<div class="wrapper">
+
+  <div class="row content-wrapper">
+    <div class="columns large-12">
+      <div class="row">
+        <div class="columns large-4 content sidebar">
+          <h1 class="page-title services">Why Choose us</h1>
+          <ul>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+            <li class="bullet"><a href="#">Purus magnis augue adipiscing mid magna</a></li>
+            <li class="bullet"><a href="#">Amet dignissim natoque, dignissim lacus</a></li>
+          </ul>
+        </div>
+        <div class="columns large-8">
+          <h1 class="page-title">Our Services</h1>
+          <div class="row">
+            <div class="columns large-6">
+              <div class="service-box-page">
+                <p> <%= image_tag("logo.png", alt:"") %></p>
+                <h4>Service Title</h4>
+                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet</p>
+              </div>
+            </div>
+            <div class="columns large-6">
+              <div class="service-box-page">
+                <p> <%= image_tag("logo.png", alt:"") %></p>
+                <h4>Service Title</h4>
+                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="columns large-6">
+              <div class="service-box-page">
+                <p> <%= image_tag("logo.png", alt:"") %></p>
+                <h4>Service Title</h4>
+                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet</p>
+              </div>
+            </div>
+            <div class="columns large-6">
+              <div class="service-box-page">
+                <p> <%= image_tag("logo.png", alt:"") %></p>
+
+                <h4>Service Title</h4>
+                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.js"></script>
+<script>
+    Modernizr.load({
+        test: Modernizr.placeholder,
+        nope: 'js/placeholder.min.js'
+    });
+
+    function goToNewPage() {
+        if (document.getElementById('target').value) {
+            window.location.href = document.getElementById('target').value;
+        }
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $('ul.sf-menu').superfish({
+            animation: {
+                height: 'show'
+            },
+            delay: 400
+        });
+        $("img.scrollToTop").click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, "slow");
+        });
+    });
+</script>
+</body>

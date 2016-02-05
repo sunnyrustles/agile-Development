@@ -1,0 +1,64 @@
+
+  <div class="header">
+
+<div class="row">
+  <div class="columns large-12  header-logo"> <a href="index.html"> <%= image_tag("logo.png", alt:"") %></a> </div>
+  <div class="columns large-12">
+
+
+
+
+
+    <nav>
+      <section>
+        <ul class="sf-menu large-12">
+
+          <li><%= link_to 'HOME', page_home_path %></li>
+          <li><%= link_to 'ABOUT US' , page_about_path%></li>
+          <li><%= link_to 'NAVIGATE' , page_navigate_path%></li>
+          <li><%= link_to 'PROFILE' , page_profile_path%></li>
+
+            <ul class="dropdown">
+              <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
+                <ul class="dropdown">
+                  <li><a href="#">Dropdown Level 2a</a></li>
+                  <li><a href="#">Dropdown Level 2b</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown Level 1b</a></li>
+              <li><a href="#">Dropdown Level 1c</a></li>
+              <li><a href="#">Dropdown Level 1d</a></li>
+              <li><a href="#">See all &rarr;</a></li>
+            </ul>
+          </li>
+          <li><%= link_to 'SERVICES' , page_services_path %></li>
+          <li><%= link_to 'CONTACT US' , page_contact_path %></li>
+          <li><%= link_to 'RIDES', page_rides_path %></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+</div>
+<div class="row">
+  <div class="columns large-12 small-top-menu">
+    <div class="row">
+      <div class="columns large-12 plr0 top-nav">
+        <form name="dropdown" class="dropdown" action="#">
+          <nav>
+            <section>
+              <select name="selected" id="target" accesskey="E" onChange="goToNewPage(document.dropdown.selected)">
+                <option value="index.html">home</option>
+                <option value="about.html">about us</option>
+                <option value="blog.html">blog</option>
+                <option value="gallery.html">gallery</option>
+                <option value="services.html">services</option>
+                <option value="contact.html">contact us</option>
+              </select>
+            </section>
+          </nav>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div></div>

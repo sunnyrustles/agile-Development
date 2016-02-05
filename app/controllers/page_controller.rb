@@ -7,7 +7,7 @@ class PageController < ApplicationController
   end
 
   def profile
-
+    @profile = Profile.first
   end
 
   def rides

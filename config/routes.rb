@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'page/navigate'
   get 'page/about'
   get 'page/profile'

@@ -15,9 +15,26 @@
 
           <li><%= link_to 'HOME', page_home_path %></li>
           <li><%= link_to 'ABOUT US' , page_about_path%></li>
-          <li><%= link_to 'Login' , new_user_session_path%></li>
-          <li><%= link_to 'PROFILE' , page_profile_path%></li>
 
+          <!-- Hey EZ, this is the check to change
+            login/logout based on sign-in status.
+            You can move it wherever you like, the code will work
+            exactly the same copy/pasted. If you haven't noticed, when you login
+            or logout the helpful user message appears in the far uppper-left
+            of our page, really tiny. If you want to style that guy as well
+            you can find it in the application.html.erb with the classes
+            "notice" and "alert". The alert messages for incorrect input
+             could also be styled but it actually doesn't look bad as-is -->
+
+          <% if user_signed_in? %>
+            <li><%= link_to 'Logout' , destroy_user_session_path, method: "delete"%></li>
+          <% else %>
+            <li><%= link_to 'Login' , new_user_session_path%></li>
+          <% end %>
+
+          <!-- end check -->
+
+          <li><%= link_to 'PROFILE' , page_profile_path%></li>
             <ul class="dropdown">
               <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
                 <ul class="dropdown">

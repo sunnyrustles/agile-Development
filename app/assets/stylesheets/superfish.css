@@ -50,15 +50,17 @@
 	text-decoration: none;
 	zoom: 1; /* IE7 */
 }
+
 .sf-menu a {
-	color: #13a;
+    color: #13a;
+    padding-left: 20%;
 }
 .sf-menu li {
-	background: #BDD2FF;
-	white-space: nowrap; /* no need for Supersubs plugin */
-	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
-	-webkit-transition: background .2s;
-	transition: background .2s;
+    background: #BDD2FF;
+    width: 16.66%;
+    white-space: nowrap;
+    -webkit-transition: background .2s;
+    transition: background .2s;
 }
 .sf-menu ul li {
 	background: #AABDE6;

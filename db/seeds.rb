@@ -11,10 +11,19 @@ include Faker
 
   puts Company.bs
 
-  Product.create(
-     name: Name.name ,
-      description: Lorem.paragraphs(10)
- )
+Profile.create(
+           fullName: Faker::Name.name,
+           age: rand(0..105),
+           email: Faker::Internet.email, #this needs to be linked to user DB
+           major: Faker::Hacker.abbreviation,
+           gender: rand(0..1),
+           schoolName: Faker::University.name ,
+           smoke: rand(0..1),
+           pet: rand(0..1),
+           drive: rand(0..1),
+           bio: Faker::Lorem.paragraph(2),
+           avatar: Avatar.image("my-own-slug", "500x500")
+)
 
   User.create(
 

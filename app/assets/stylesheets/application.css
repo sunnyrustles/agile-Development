@@ -20,3 +20,19 @@
 {
     width: 28%;
 }
+
+
+#login
+{
+    position: absolute;
+    top: -120%;
+    left: 90%;
+    font-size: 2em;
+}
+
+.notice{
+    font-weight: bold;
+    color: red;
+    font-size: 1.4em;
+    text-align: center;
+}

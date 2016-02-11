@@ -2,8 +2,90 @@
 
   <div class="header">
 
-  <h1>Page#profile</h1>
-  <p>Find me in app/views/page/Profile.html.erb</p>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <title>Social User Profile Page in HTML5/CSS3[DEMO]</title>
+      <link rel="stylesheet" type="text/css" href="global.css" />
+    </head>
+
+    <body>
+
+
+
+    <div id="content" class="clearfix">
+      <section id="left">
+        <div id="userStats" class="clearfix">
+          <div class="pic">
+            <%= image_tag("slide1.jpg", alt:"Terry", class:"th about-image", height:150, width: 150)%>
+          </div>
+
+          <div class="data">
+            <h1>Terry Brown</h1>
+            <h3>Whitehouse, TX</h3>
+
+
+            <div class="sep">
+            <ul class="numbers clearfix">
+              <li>Rating<strong></strong></li>
+              <li>Current Rides<strong></strong></li>
+              <li>Past Rides<strong></strong></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+
+        <h1>About Me:</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <section id="right">
+        <div class="gcontent">
+          <div class="head"><h1>Preferences</h1></div>
+          <div class="boxy">
+            <p>Things I look for in travel companions<strong></strong></p>
+
+            <div class="sep">
+              <ul class="numbers clearfix">
+                <li>Non-smokers</li>
+                <li>Clean</li>
+                <li>Ability to drive if needed </li>
+              </ul>
+            </div>
+
+            <span><a href="#">See all...</a></span>
+          </div>
+        </div>
+
+        <div class="gcontent">
+          <div class="head"><h1>Trip Pic's</h1></div>
+          <div class="boxy">
+
+
+            <div class="friendslist clearfix">
+              <div class="friend">
+                <%= image_tag("baby-lamb.jpg", alt:"Terry", class:"th about-image", height:70, width: 70)%>
+              </div>
+
+              <div class="friend">
+                <%= image_tag("car1.jpg", alt:"Terry", class:"th about-image", height:70, width: 70)%>
+              </div>
+
+              <div class="friend">
+                <%= image_tag("coffee.jpg", alt:"Terry", class:"th about-image", height:70, width: 70)%>
+              </div>
+
+
+            </div>
+
+            <span><a href="#">See all...</a></span>
+          </div>
+        </div>
+      </section>
+    </div>
+    </body>
+    </html>
 
 </div>
 </div>

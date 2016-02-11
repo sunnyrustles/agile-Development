@@ -2,11 +2,14 @@
 <html>
 <head>
   <title>AgileDev</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
   <meta charset="utf-8">
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 </head>
 <body>
 

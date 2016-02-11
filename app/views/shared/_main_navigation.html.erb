@@ -2,9 +2,17 @@
   <div class="header">
 
 <div class="row">
-  <div class="columns large-12  header-logo"> <a href="index.html"> <%= image_tag("logo.png", alt:"") %></a> </div>
+  <div class="columns large-12  header-logo"> <a href="home.html"> <%= image_tag("logo.png", alt:"") %></a> </div>
   <div class="columns large-12">
 
+    <div id="login">
+
+      <% if user_signed_in? %>
+          <%= link_to 'Logout' , destroy_user_session_path, method: "delete"%>
+      <% else %>
+          <%= link_to 'Login/Register' , new_user_session_path%>
+      <% end %>
+    </div>
 
 
 
@@ -15,9 +23,7 @@
 
           <li><%= link_to 'HOME', page_home_path %></li>
           <li><%= link_to 'ABOUT US' , page_about_path%></li>
-
           <li><%= link_to 'PROFILE' , page_profile_path%></li>
-
             <ul class="dropdown">
               <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
                 <ul class="dropdown">

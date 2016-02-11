@@ -160,10 +160,7 @@ p{
 }
 .sf-menu{    
     margin-bottom: 0;
-    /* sm???*/
-    background-color: #007ebf;
-    background-image: url('menubg.png');
-    background-repeat: repeat-x;
+    background: #007ebf url('menubg.png') repeat-x top;
     padding-left: 10px;
     padding-right: 10px;
     border:1px solid #000;
@@ -436,7 +433,7 @@ p.test-credit .name{
 
 .contact-form .button{
    margin-top: 20px;
-   background: #000;
+   background: #007ebf;
 }
 /*************sidebar************/
 .sidebar ul li{
@@ -543,7 +540,7 @@ span.small-icon{
 }
 
  .useful-links ul li{
-   background: /*url('../images/bullet.png')*/ no-repeat 0; /*sm???*/
+   /*background: url('bullet.png') no-repeat 0; /!*sm??? Our pages don't use this class and we don't have the image*!/*/
    padding-left:20px;
  }
 

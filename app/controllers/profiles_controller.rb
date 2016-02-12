@@ -15,6 +15,7 @@ class ProfilesController < ApplicationController
     if ! @profile
       redirect_to new_profile_path
     end
+    set_profile
   end
 
   # GET /profiles/new

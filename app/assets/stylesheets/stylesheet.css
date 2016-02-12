@@ -592,6 +592,7 @@ img.scrollToTop{
    .footer-inner .box{
       padding-left: 10px;
       padding-right: 10px;
+       width: 25%;
    }
    .sf-menu li a{
       padding-left: .75em;

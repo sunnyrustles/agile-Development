@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @profile.fullname %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @profile.age %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @profile.email %>
+</p>
+
+<p>
+  <strong>Major:</strong>
+  <%= @profile.major %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @profile.gender %>
+</p>
+
+<p>
+  <strong>Schoolname:</strong>
+  <%= @profile.schoolName %>
+</p>
+
+<p>
+  <strong>Smoke:</strong>
+  <%= @profile.smoke %>
+</p>
+
+<p>
+  <strong>Pet:</strong>
+  <%= @profile.pet %>
+</p>
+
+<p>
+  <strong>Drive:</strong>
+  <%= @profile.drive %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @profile.bio %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= @profile.avatar %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

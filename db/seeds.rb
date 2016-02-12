@@ -14,7 +14,7 @@ include Faker
 Profile.create(
            fullName: Faker::Name.name,
            age: rand(0..105),
-           email: Faker::Internet.email, #this needs to be linked to user DB
+           # email: Faker::Internet.email, #this needs to be linked to user DB
            major: Faker::Hacker.abbreviation,
            gender: rand(0..1),
            schoolName: Faker::University.name ,
@@ -27,7 +27,7 @@ Profile.create(
 
   User.create(
 
-          email: Faker::Internet.email,                   # required
+          # email: Faker::Internet.email,                   # required
           password: Faker::Internet.password(8, 20),      # required
           sign_in_count: Faker::Number.between(1, 10),    # required
           reset_password_token: Faker::Internet.password(8, 20),

@@ -1,5 +1,6 @@
 class ProfilesController < ApplicationController
-  before_action :set_profile, only: [:show, :edit, :update, :destroy]
+  before_action :set_profile, only: [ :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:index, :show, :edit, :update, :destroy]
 
   # GET /profiles
   # GET /profiles.json
@@ -10,6 +11,10 @@ class ProfilesController < ApplicationController
   # GET /profiles/1
   # GET /profiles/1.json
   def show
+    @profile = Profile.exists?( :id => params[:id])
+    if ! @profile
+      redirect_to new_profile_path
+    end
   end
 
   # GET /profiles/new

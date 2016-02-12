@@ -5,11 +5,11 @@
 
     <div id="login">
 
-      <!--<#% if user_signed_in? %>-->
-          <!--<#%= link_to 'Logout' , destroy_user_session_path, method: "delete"%>-->
-      <!--<#% else %>-->
-          <!--<#%= link_to 'Login/Register' , new_user_session_path%>-->
-      <!--<#% end %>-->
+      <% if user_signed_in? %>
+          <%= link_to 'Logout' , destroy_user_session_path, method: "delete"%>
+      <% else %>
+          <%= link_to 'Login/Register' , new_user_session_path%>
+      <% end %>
     </div>
 
 
@@ -18,7 +18,11 @@
             <ul class="sf-menu large-12">
               <li><%= link_to 'HOME', page_home_path %></li>
               <li><%= link_to 'ABOUT US' , page_about_path%></li>
-              <li><%= link_to 'PROFILE' , profiles_path%></li>
+              <% if user_signed_in? %>
+                <li><%= link_to 'PROFILE' , profile_path(current_user.id) %></li>
+              <% else %>
+                  <li><%= link_to 'PROFILE' , new_profile_path %></li>
+              <% end %>
               <li><%= link_to 'SERVICES' , page_services_path %></li>
               <li><%= link_to 'CONTACT US' , page_contact_path %></li>
               <li><%= link_to 'RIDES', page_rides_path %></li>

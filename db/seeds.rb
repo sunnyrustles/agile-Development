@@ -12,7 +12,7 @@ include Faker
   puts Company.bs
 
 Profile.create(
-           fullName: Faker::Name.name,
+           fullname: Faker::Name.name,
            age: rand(0..105),
            email: Faker::Internet.email, #this needs to be linked to user DB
            major: Faker::Hacker.abbreviation,

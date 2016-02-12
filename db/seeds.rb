@@ -7,6 +7,36 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 include Faker
 
+User.create(
+    email: "Nate@nate.com",                   # required
+    password: "12345678",      # required
+    sign_in_count: Faker::Number.between(1, 10),    # required
+    reset_password_token: Faker::Internet.password(8, 20),
+    reset_password_sent_at: Faker::Time.between(DateTime.now  - 350, DateTime.now),
+    remember_created_at: Faker::Time.between(DateTime.now  - 750, DateTime.now - 350),
+    current_sign_in_at:  Faker::Time.between(DateTime.now - 1, DateTime.now),
+    last_sign_in_at:  Faker::Time.between(DateTime.now - 1, DateTime.now),
+    last_sign_in_ip: Faker::Internet.ip_v4_address,
+    current_sign_in_ip: Faker::Internet.ip_v4_address
+)
+
+Profile.create(fullName: "Nathan Robertson",
+               age: 23,
+               # email: @user.email,
+               email: "Nate@nate.com",
+               major: "Computer Science",
+               gender: "M",
+               schoolName: "SCC",
+               smoke: 0,
+               pet: 1,
+               drive: 1,
+               bio: "This is a bio.",
+               avatar: "None",
+               # profile_id: @user.id
+               # profile_id: 1234
+)
+
+
 10.times do
 
   puts Company.bs

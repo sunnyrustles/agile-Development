@@ -30,7 +30,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #gem 'bcrypt', '~> 3.1.7'
 #gem 'bcrypt'
 #gem 'bcrypt-ruby', '3.1.5', :require => 'bcrypt'
-gem 'bcrypt-ruby', '3.1.1.rc1', :require => 'bcrypt'
+#gem 'bcrypt-ruby', '3.1.1.rc1', :require => 'bcrypt'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

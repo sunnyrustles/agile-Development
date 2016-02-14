@@ -12,10 +12,11 @@ class ProfilesController < ApplicationController
   # GET /profiles/1.json
   def show
     @profile = Profile.exists?( :id => params[:id])
-    if ! @profile
+    if @profile
+      set_profile
+    else
       redirect_to new_profile_path
     end
-    set_profile
   end
 
   # GET /profiles/new

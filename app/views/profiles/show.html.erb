@@ -1,59 +1,74 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Fullname:</strong>
-  <%= @profile.fullname %>
-</p>
 
-<p>
-  <strong>Age:</strong>
-  <%= @profile.age %>
-</p>
+<div id="pagewrap">
+  <header>
+    <h1> Personal Profile</h1>
+  </header>
 
-<p>
-  <strong>Email:</strong>
-  <%= @profile.email %>
-</p>
+  <section id="content">
+    <h1> Personal Information</h1>
+    <p>
+      <strong>Avatar:</strong>
+      <%= @profile.avatar %>
+    </p>
+    <p>
+      <strong>Fullname:</strong>
+      <%= @profile.fullname %>
+    </p>
 
-<p>
-  <strong>Major:</strong>
-  <%= @profile.major %>
-</p>
+    <p>
+      <strong>Age:</strong>
+      <%= @profile.age %>
+    </p>
 
-<p>
-  <strong>Gender:</strong>
-  <%= @profile.gender %>
-</p>
+    <p>
+      <strong>Email:</strong>
+      <%= @profile.email %>
+    </p>
+    <p>
+      <strong>Schoolname:</strong>
+      <%= @profile.schoolName %>
+    </p>
+    <p>
+      <strong>Major:</strong>
+      <%= @profile.major %>
+    </p>
 
-<p>
-  <strong>Schoolname:</strong>
-  <%= @profile.schoolName %>
-</p>
+    <p>
+      <strong>Gender:</strong>
+      <%= @profile.gender %>
+    </p>
+  </section>
 
-<p>
-  <strong>Smoke:</strong>
-  <%= @profile.smoke %>
-</p>
+  <section id="middle">
+    <h1> Personal Preferences</h1>
+    <p>
+    <strong>Smoke:</strong>
+    <%= @profile.smoke %>
+    </p>
 
-<p>
-  <strong>Pet:</strong>
-  <%= @profile.pet %>
-</p>
+    <p>
+    <strong>Pet:</strong>
+    <%= @profile.pet %>
+    </p>
 
-<p>
-  <strong>Drive:</strong>
-  <%= @profile.drive %>
-</p>
+    <p>
+    <strong>Drive:</strong>
+    <%= @profile.drive %>
+    </p>
 
-<p>
-  <strong>Bio:</strong>
-  <%= @profile.bio %>
-</p>
 
-<p>
-  <strong>Avatar:</strong>
-  <%= @profile.avatar %>
-</p>
+  </section>
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+  <aside id="sidebar">
+    <h1> Personal Bio</h1>
+    <p>
+      <strong>Bio:</strong>
+      <%= @profile.bio %>
+    </p>
+  </aside>
+  <%= link_to 'Edit', edit_profile_path(@profile) %> |
+  <%= link_to 'Back', profiles_path %>
+
+
+</div>

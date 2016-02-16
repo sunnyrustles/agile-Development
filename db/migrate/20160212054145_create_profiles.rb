@@ -5,7 +5,7 @@ class CreateProfiles < ActiveRecord::Migration
       t.integer :age
       t.string :email
       t.string :major
-      t.boolean :gender
+      t.string :gender
       t.string :schoolName
       t.boolean :smoke
       t.boolean :pet

@@ -28,9 +28,14 @@
         <%= f.label :major %><br>
         <%= f.text_field :major %>
       </div>
-      <div class="field">
-        <%= f.label :gender %><br>
-        <%= f.check_box :gender %>
+      <div class="field gender-field">
+
+        <%= f.label :gender %><br><br>
+        <%= radio_button_tag( :gender, 'Female') %>
+        <%= label_tag( 'Female') %><br>
+        <%= radio_button_tag( :gender, 'Male') %>
+        <%= label_tag( 'Male') %><br><br>
+
       </div>
       <div class="field">
         <%= f.label :schoolName %><br>

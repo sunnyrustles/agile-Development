@@ -29,7 +29,7 @@
               <% if user_signed_in? %>
                 <li><%= link_to 'PROFILE' , profile_path(current_user.id) %></li>
               <% else %>
-                  <li><%= link_to 'PROFILE' , new_profile_path %></li>
+                  <li><%= link_to 'PROFILE' , new_user_session_path %></li>
               <% end %>
               <li><%= link_to 'SERVICES' , page_services_path %></li>
               <li><%= link_to 'CONTACT US' , page_contact_path %></li>

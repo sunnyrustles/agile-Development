@@ -26,7 +26,7 @@
 {
     position: absolute;
     top: 102%;
-    left: 92%;
+    left: 80%;
     font-size: 2em;
 }
 

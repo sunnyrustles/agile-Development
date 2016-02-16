@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div id="pagewrap">
+
   <header>
     <h1> Personal Profile</h1>
   </header>
@@ -36,7 +37,13 @@
 
     <p>
       <strong>Gender:</strong>
-      <%= @profile.gender %>
+      <%=  @profile.gender %>
+      <!--<#% if @profile.gender %>-->
+          <!--<#%= "Male" %>-->
+      <!--<#% else %>-->
+          <!--<#%= "Female" %>-->
+      <!--<#% end %>-->
+
     </p>
   </section>
 

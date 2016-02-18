@@ -9,7 +9,7 @@ include Faker
 
 # ________________________________ Nate _____________________________________
 User.create(
-    email: "nate@nate.com",
+    email: "loadedervish23@gmail.com",
     password: "12341234",
     sign_in_count: Faker::Number.between(1, 10),
     reset_password_token: Faker::Internet.password(8, 20),
@@ -22,9 +22,9 @@ User.create(
 )
 
 Profile.create(
-    fullname: "Nathan Something",
+    fullname: "Nathan M. Robertson",
     age: 24,
-    email: "nate@nate.com",
+    email: "loadedervish23@gmail.com",
     major: "Fantastic Web Design",
     gender: "Male",
     schoolName: "SCC" ,
@@ -39,7 +39,7 @@ Rail slide crooked grind heel flip McTwist airwalk flail birdie. Kevin Harris ta
 
 # ________________________________ Ez _____________________________________
 User.create(
-    email: "ez@ez.com",
+    email: "e.layata@gmail.com",
     password: "12341234",
     sign_in_count: Faker::Number.between(1, 10),
     reset_password_token: Faker::Internet.password(8, 20),
@@ -52,9 +52,9 @@ User.create(
 )
 
 Profile.create(
-    fullname: "Ezequias",
+    fullname: "Ezequias A. Layata",
     age: 24,
-    email: "ez@ez.com",
+    email: "e.layata@gmail.com",
     major: "Fantastic Web Design",
     gender: "Male",
     schoolName: "SCC" ,
@@ -69,7 +69,7 @@ Network of wormholes! Hydrogen atoms a mote of dust suspended in a sunbeam tingl
 
 # ________________________________ Dylan _____________________________________
 User.create(
-    email: "Dylan@dylan.com",
+    email: "Dylans07@yahoo.com",
     password: "12341234",
     sign_in_count: Faker::Number.between(1, 10),
     reset_password_token: Faker::Internet.password(8, 20),
@@ -82,9 +82,9 @@ User.create(
 )
 
 Profile.create(
-    fullname: "Dylan",
+    fullname: "Dylan S. Smith",
     age: 24,
-    email: "Dylan@dylan.com",
+    email: "Dylans07@yahoo.com",
     major: "Fantastic Web Design",
     gender: "Male",
     schoolName: "SCC" ,
@@ -101,7 +101,7 @@ Did the primary buffer panel just fall off my Gorram ship for no apparent reason
 
 # ________________________________ Terry _____________________________________
 User.create(
-    email: "Terry@terry.com",
+    email: "Brownterry3236@gmail.com",
     password: "12341234",
     sign_in_count: Faker::Number.between(1, 10),
     reset_password_token: Faker::Internet.password(8, 20),
@@ -114,9 +114,9 @@ User.create(
 )
 
 Profile.create(
-    fullname: "Terry Brandon Something",
+    fullname: "Terry B. Brown",
     age: 24,
-    email: "Terry@terry.com",
+    email: "Brownterry3236@gmail.com",
     major: "Fantastic Web Design",
     gender: "Male",
     schoolName: "SCC" ,
@@ -143,7 +143,7 @@ User.create(
 )
 
 Profile.create(
-    fullname: "ShellyM",
+    fullname: "Shelly McLallen",
     age: 45,
     email: "shellymclallen@yahoo.com",
     major: "ECEN",

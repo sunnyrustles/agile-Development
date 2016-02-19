@@ -1,120 +1,4 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
-
-
- *= require_colorbox
- */
-
-
-
-.header-logo
-{
-    width: 28%;
-}
-
-
-#login
-{
-    position: absolute;
-    top: 102%;
-    left: 92%;
-    font-size: 2em;
-}
-
-.notice{
-    font-weight: bold;
-    color: red;
-    font-size: 1.4em;
-    text-align: center;
-}
-
-
-#axis:hover .move-left
-{
-    transform: translate(-900px,0);
-    -webkit-transform: translate(-850px,0);
-    -o-transform: translate(-900px,0);
-    -moz-transform: translate(-900px,0);
-    -webkit-transition: 1s ease;
-    -moz-transition: 1s ease;
-    -o-transition: 1s ease;
-    -ms-transition: 1s ease;
-}
- #axis
- {
-     width:20%;
-     height:20%;
-     float:right;
- }
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
-
-
- *= require_colorbox
- */
-
-
-
-.header-logo
-{
-    width: 28%;
-}
-
-
-#login
-{
-    position: absolute;
-    top: 102%;
-    left: 92%;
-    font-size: 2em;
-}
-
-.notice{
-    font-weight: bold;
-    color: red;
-    font-size: 1.4em;
-    text-align: center;
-}
-
-
-#axis:hover .move-left
-{
-    transform: translate(-900px,0);
-    -webkit-transform: translate(-850px,0);
-    -o-transform: translate(-900px,0);
-    -moz-transform: translate(-900px,0);
-    -webkit-transition: 1s ease;
-    -moz-transition: 1s ease;
-    -o-transition: 1s ease;
-    -ms-transition: 1s ease;
-}
- #axis
- {
-     width:20%;
-     height:20%;
-     float:right;
- }
-/*
     Colorbox Core Style:
     The following CSS is consistent between example themes and should not be altered.
 */
@@ -6191,48 +6075,31 @@ a.th {
   background: #dff2fa;
 }
 /*profile stying */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* STRUCTURE */
 /* line 11, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #666;
-}
-
-/* line 16, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
 div.field.gender-field {
   display: inline;
 }
 
-/* line 20, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+/* line 15, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
 div.field.gender-field label {
   display: inline;
 }
 
-/* STRUCTURE */
-/* line 27, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
-#pagewrap {
-  padding: 5px;
-  width: 960px;
-  margin: 20px auto;
-  background-color: #3db2e1;
-}
-
-/* line 33, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
-header {
-  height: 100px;
-  padding: 0 15px;
-  text-align: center;
-  font-size: xx-large;
-}
-
-/* line 39, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+/* line 19, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
 #content {
   width: 290px;
   float: left;
   padding: 5px 15px;
 }
 
-/* line 45, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+/* line 25, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+#content img {
+  width: 25%;
+  height: auto;
+}
+
+/* line 30, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
 #middle {
   width: 294px;
   /* Account for margins + border values */
@@ -6241,14 +6108,14 @@ header {
   margin: 0px 5px 5px 5px;
 }
 
-/* line 52, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+/* line 37, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
 #sidebar {
   width: 270px;
   padding: 5px 15px;
   float: left;
 }
 
-/* line 57, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+/* line 42, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
 footer {
   clear: both;
   padding: 0 15px;
@@ -6259,18 +6126,18 @@ MEDIA QUERIES
 *************************************************************************************/
 /* for 980px or less */
 @media screen and (max-width: 1980px) {
-  /* line 68, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+  /* line 53, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
   #pagewrap {
     width: 94%;
   }
 
-  /* line 71, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+  /* line 56, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
   #content {
     width: 49%;
     padding: 1% 4%;
   }
 
-  /* line 75, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+  /* line 60, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
   #middle {
     width: 41%;
     padding: 1% 4%;
@@ -6278,7 +6145,7 @@ MEDIA QUERIES
     float: right;
   }
 
-  /* line 82, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+  /* line 67, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
   #sidebar {
     clear: both;
     padding: 1% 4%;
@@ -6286,48 +6153,48 @@ MEDIA QUERIES
     float: none;
   }
 
-  /* line 89, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+  /* line 74, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
   header, footer {
     padding: 1% 4%;
   }
 }
 /* for 700px or less */
 @media screen and (max-width: 600px) {
-  /* line 97, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+  /* line 82, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
   #content {
     width: auto;
     float: none;
   }
 
-  /* line 102, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+  /* line 87, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
   #middle {
     width: auto;
     float: none;
     margin-left: 0px;
   }
 
-  /* line 108, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+  /* line 93, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
   #sidebar {
     width: auto;
     float: none;
   }
 }
-/* line 115, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+/* line 100, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
 #content {
   background: #f8f8f8;
 }
 
-/* line 118, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+/* line 103, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
 #sidebar, #middle {
   background: #f8f8f8;
 }
 
-/* line 121, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+/* line 106, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
 header, #content, #middle, #sidebar {
   margin-bottom: 5px;
 }
 
-/* line 125, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
+/* line 110, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/profiles.scss */
 #pagewrap, header, #content, #middle, #sidebar, footer {
   border: solid 1px #ccc;
 }
@@ -6365,7 +6232,7 @@ a:visited {
 /* line 28, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/scaffolds.scss */
 a:hover {
   color: #fff;
-  background-color: #000;
+  background-color: none;
 }
 
 /* line 35, C:/Users/Shelly/Desktop/SCC/Agile/agile-Development/app/assets/stylesheets/scaffolds.scss */
@@ -7399,7 +7266,7 @@ img.scrollToTop{
 {
     position: absolute;
     top: 102%;
-    left: 92%;
+    left: 80%;
     font-size: 2em;
 }
 
@@ -7411,113 +7278,20 @@ img.scrollToTop{
 }
 
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: #666;
+#axis:hover .move-left
+{
+    transform: translate(-900px,0);
+    -webkit-transform: translate(-850px,0);
+    -o-transform: translate(-900px,0);
+    -moz-transform: translate(-900px,0);
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
 }
-
-/* STRUCTURE */
-
-#pagewrap {
-    padding: 5px;
-    width: 960px;
-    margin: 20px auto;
-    background-color: #3db2e1;
-}
-header {
-    height: 100px;
-    padding: 0 15px;
-    text-align: center;
-    font-size: xx-large;
-}
-#content {
-    width: 290px;
-    float: left;
-    padding: 5px 15px;
-}
-
-#middle {
-    width: 294px; /* Account for margins + border values */
-    float: left;
-    padding: 5px 15px;
-    margin: 0px 5px 5px 5px;
-}
-
-#sidebar {
-    width: 270px;
-    padding: 5px 15px;
-    float: left;
-}
-footer {
-    clear: both;
-    padding: 0 15px;
-}
-
-/************************************************************************************
-MEDIA QUERIES
-*************************************************************************************/
-/* for 980px or less */
-@media screen and (max-width: 1980px) {
-
-    #pagewrap {
-        width: 94%;
-    }
-    #content {
-        width: 49%;
-        padding: 1% 4%;
-    }
-    #middle {
-        width: 41%;
-        padding: 1% 4%;
-        margin: 0px 0px 5px 5px;
-        float: right;
-    }
-
-    #sidebar {
-        clear: both;
-        padding: 1% 4%;
-        width: auto;
-        float: none;
-    }
-
-    header, footer {
-        padding: 1% 4%;
-    }
-}
-
-/* for 700px or less */
-@media screen and (max-width: 600px) {
-
-    #content {
-        width: auto;
-        float: none;
-    }
-
-    #middle {
-        width: auto;
-        float: none;
-        margin-left: 0px;
-    }
-
-    #sidebar {
-        width: auto;
-        float: none;
-    }
-
-}
-
-#content {
-    background: #f8f8f8;
-}
-#sidebar, #middle {
-    background: #f8f8f8;
-}
-header, #content, #middle, #sidebar {
-    margin-bottom: 5px;
-}
-
-#pagewrap, header, #content, #middle, #sidebar, footer {
-    border: solid 1px #ccc;
-}
+ #axis
+ {
+     width:20%;
+     height:20%;
+     float:right;
+ }

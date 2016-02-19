@@ -1,4 +1,4 @@
-<%= form_for(@profile) do |f| %>
+<%= form_for @profile, html: { multipart: true } do |f| %>
   <% if @profile.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
@@ -26,15 +26,17 @@
       </div>
       <div class="field">
         <%= f.label :major %><br>
-        <%= f.text_field :major %>
+        <%= f.text_field :major %><br>
       </div>
       <div class="field gender-field">
-
-        <%= f.label :gender %><br><br>
+        <!--radio_button_tag 'gender', 'male'-->
+        <!--<input id="gender_male" name="gender" value="male" />-->
+        <%= f.label :gender %><br>
         <%= radio_button_tag( :gender, 'Female') %>
         <%= label_tag( 'Female') %><br>
         <%= radio_button_tag( :gender, 'Male') %>
         <%= label_tag( 'Male') %><br><br>
+        <%#= f.text_field :gender %>
 
       </div>
       <div class="field">
@@ -57,10 +59,14 @@
         <%= f.label :bio %><br>
         <%= f.text_area :bio %>
       </div>
-      <div class="field">
-        <%= f.label :avatar %><br>
-        <%= f.text_field :avatar %>
-      </div>
+      <!--<div class="field">-->
+        <%#= f.label :avatar %><br>
+        <!--<%#= f.text_field :avatar %>-->
+      <!--</div>-->
+    <div class="field">
+      <%= f.label :photo %><br>
+      <%= f.file_field :photo %>
+    </div>
       <div class="actions">
         <%= f.submit %>
       </div>

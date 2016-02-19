@@ -29,12 +29,14 @@
         <%= f.text_field :major %>
       </div>
       <div class="field gender-field">
-
+        <!--radio_button_tag 'gender', 'male'-->
+        <!--# => <input id="gender_male" name="gender" type="radio" value="male" />-->
         <%= f.label :gender %><br><br>
         <%= radio_button_tag( :gender, 'Female') %>
         <%= label_tag( 'Female') %><br>
         <%= radio_button_tag( :gender, 'Male') %>
         <%= label_tag( 'Male') %><br><br>
+        <%#= f.text_field :gender %>
 
       </div>
       <div class="field">

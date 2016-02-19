@@ -26,12 +26,12 @@
       </div>
       <div class="field">
         <%= f.label :major %><br>
-        <%= f.text_field :major %>
+        <%= f.text_field :major %><br>
       </div>
       <div class="field gender-field">
         <!--radio_button_tag 'gender', 'male'-->
-        <!--# => <input id="gender_male" name="gender" type="radio" value="male" />-->
-        <%= f.label :gender %><br><br>
+        <!--<input id="gender_male" name="gender" value="male" />-->
+        <%= f.label :gender %><br>
         <%= radio_button_tag( :gender, 'Female') %>
         <%= label_tag( 'Female') %><br>
         <%= radio_button_tag( :gender, 'Male') %>

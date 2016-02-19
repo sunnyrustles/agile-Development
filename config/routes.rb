@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'page/about'
   get 'page/profile'
   get 'page/contact'
+  post 'page/contact'
   get 'page/rides'
   get 'page/home'
   get 'page/services'

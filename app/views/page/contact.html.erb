@@ -10,10 +10,12 @@
           <div class="row contact-form">
             <div class="columns large-8">
               <form id="contact-form" method="post" action="#">
+                <%= @name %>
+                <%= params.inspect %>
                 <input type="text" name="name" placeholder="Name:">
                 <input type="text" name="email" placeholder="Email:">
                 <input type="text" name="subject" placeholder="Subject:">
-                <textarea  name="message"></textarea>
+                <textarea  name="message" placeholder="Message:"></textarea>
                 <input type="submit" class="button" name="submit" value="send">
               </form>
             </div>

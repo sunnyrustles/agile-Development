@@ -18,6 +18,7 @@ gem 'devise'
 gem 'faker'
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
 gem 'image_magick', '~> 0.1.9'
+gem 'coffee-script-source', '1.8.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

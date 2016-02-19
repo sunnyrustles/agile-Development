@@ -7,9 +7,16 @@
 
   <section id="content">
     <h1> Personal Information</h1>
+
+    <!--<p>-->
+      <!--&lt;!&ndash;<strong>Avatar:</strong>&ndash;&gt;-->
+      <!--<%#= image_tag(@profile.avatar ) %>-->
+    <!--</p>-->
+
     <p>
       <!--<strong>Avatar:</strong>-->
-      <%= image_tag(@profile.avatar ) %>
+      <%=  image_tag @profile.photo.url %>
+      <%#=  image_tag @profile.photo.url(:thumb) %>
     </p>
     <p>
       <strong>Fullname:</strong>

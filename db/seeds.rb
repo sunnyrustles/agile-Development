@@ -7,6 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 include Faker
 
+#TODO Changes avatars to images in seeds file for all of us.... the rest use the default image so no need to set
+
 # ________________________________ Nate _____________________________________
 User.create(
     email: "loadedervish23@gmail.com",

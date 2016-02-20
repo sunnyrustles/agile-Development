@@ -9,5 +9,8 @@ class PageController < ApplicationController
     @email = params[:email]
     @subject = params[:subject]
     @message = params[:message]
+    @all = params[:all]
+    ContactMailer.contact_email(@name, @email, @subject, @message).deliver_now
   end
+
 end

@@ -1,3 +1,4 @@
+
 <div class="wrapper">
   <div class="row content-wrapper">
     <div class="columns large-12">
@@ -5,42 +6,39 @@
         <div class="columns large-12 content ">
           <h1 class="page-title">Contact Us</h1>
           <div>
-            <h2 class="sub-title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt</h2>
+            <h2 class="sub-title">You can reach CollegeRides.com Customer Service from 8:00am to 6:00pm (Pacific Time) every weekday by submitting the form below!</h2>
           </div>
-
-          <% if params[:commit] %>
-              <div>
-                Name: <%= @name %><br/>
-                Email: <%= @email %><br/>
-                Subject: <%= @subject %><br/>
-                Message: <%= @message %><br/><br/>
-                <%= "All Submitted Values: " + params.inspect %><br/><br/>
-              </div>
-          <% end %>
 
           <div class="row contact-form">
             <div class="columns large-8">
+
+              <!--<form id="contact-form" method="post" action="#">
+              <input type="text" name="name" placeholder="Name:">
+              <input type="text" name="email" placeholder="Email:">
+              <input type="text" name="subject" placeholder="Subject:">
+              <textarea  name="message" placeholder="Message:"></textarea>
+              <input type="submit" class="button" name="submit" value="send">
+              </form>-->
+
               <%= form_tag do %>
-                <!--<form id="contact-form" method="post" action="#">-->
-                <input type="text" name="name" placeholder="Name:">
-                <input type="text" name="email" placeholder="Email:">
-                <input type="text" name="subject" placeholder="Subject:">
-                <textarea  name="message" placeholder="Message:"></textarea>
-                <!--<input type="submit" class="button" name="submit" value="send">-->
-                  <%= submit_tag 'Submit', class: 'button' %>
-                <!--</form>-->
+                <%= text_field_tag 'name', @name, placeholder: 'Name:' %>
+                <%= text_field_tag 'email', @email, placeholder: 'Email:' %>
+                <%= text_field_tag 'subject', @subject, placeholder: 'Subject:' %>
+                <%= text_area_tag 'message', @message, placeholder: 'Message'  %>
+                <%= submit_tag 'Submit', class: 'contactTextBox' %>
               <% end %>
+
             </div>
             <div class="columns large-4">
               <div id="map_canvas"></div>
               <ul class="vcard">
                 <li class="fn">FANTASTIC 5</li>
                 <li class="street-address">255, Willson Street,Caulfield</li>
-                <li class="locality">Melbourne</li>
-                <li><span class="state">Victoria</span>, <span class="zip">122211</span></li>
-                <li class="email"><span>Email:</span>email@domain.com</li>
-                <li class="telephone"><span>Tel:</span>(122)3456789, (121)3456079, (121)2341234</li>
-                <li class="fax"><span>Tel:</span>1800-726-192</li>
+                <li class="locality">U.S.A</li>
+                <li><span class="state">Washington</span>, <span class="zip">99212</span></li>
+                <li class="email"><span>Email:</span>needarideWebmaster@gmail.com</li>
+                <li class="telephone"><span>Tel:</span>(509)3456789, (509)3456079, (509)2341234</li>
+                <li class="fax"><span>Tel:</span>1800-726-1924</li>
               </ul>
             </div>
           </div>

@@ -5,12 +5,9 @@ class PageController < ApplicationController
   end
 
   def contact
-
-    # params hash
-
-    @name = "ShellyTemp"
-    @email = "Shelly@shellytemp.com"
-    @subject = "Computery Stuff"
-    @message = "It's amusing to me how Dave says we can do profiley type stuff"
+    @name = params[:name]
+    @email = params[:email]
+    @subject = params[:subject]
+    @message = params[:message]
   end
 end

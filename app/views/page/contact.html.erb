@@ -7,17 +7,29 @@
           <div>
             <h2 class="sub-title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt</h2>
           </div>
+
+          <% if params[:commit] %>
+              <div>
+                Name: <%= @name %><br/>
+                Email: <%= @email %><br/>
+                Subject: <%= @subject %><br/>
+                Message: <%= @message %><br/><br/>
+                <%= "All Submitted Values: " + params.inspect %><br/><br/>
+              </div>
+          <% end %>
+
           <div class="row contact-form">
             <div class="columns large-8">
-              <form id="contact-form" method="post" action="#">
-                <%= @name %>
-                <%= params.inspect %>
+              <%= form_tag do %>
+                <!--<form id="contact-form" method="post" action="#">-->
                 <input type="text" name="name" placeholder="Name:">
                 <input type="text" name="email" placeholder="Email:">
                 <input type="text" name="subject" placeholder="Subject:">
                 <textarea  name="message" placeholder="Message:"></textarea>
-                <input type="submit" class="button" name="submit" value="send">
-              </form>
+                <!--<input type="submit" class="button" name="submit" value="send">-->
+                  <%= submit_tag 'Submit', class: 'button' %>
+                <!--</form>-->
+              <% end %>
             </div>
             <div class="columns large-4">
               <div id="map_canvas"></div>

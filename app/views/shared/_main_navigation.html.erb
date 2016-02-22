@@ -40,6 +40,7 @@
     <div id="login">
 
       <% if user_signed_in? %>
+          <%#= current_user.email %>
           <%= link_to 'Logout' , destroy_user_session_path, method: "delete"%>
       <% else %>
           <%= link_to 'Login/Register' , new_user_session_path%>

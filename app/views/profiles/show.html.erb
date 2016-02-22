@@ -1,74 +1,112 @@
 <!--<p id="notice"><%#= notice %></p>-->
-
-<div class="row">
-  <header>
-    <h1> Personal Profile</h1>
-  </header>
-
-  <section id="content">
-    <h1> Personal Information</h1>
-
-    <p>
-      <%=  image_tag @profile.photo.url(:thumb) %>
-    </p>
-    <p>
-      <strong>Fullname:</strong>
-      <%= @profile.fullname %>
-    </p>
-
-    <p>
-      <strong>Age:</strong>
-      <%= @profile.age %>
-    </p>
-
-    <p>
-      <strong>Email:</strong>
-      <%= @profile.email %>
-    </p>
-    <p>
-      <strong>Schoolname:</strong>
-      <%= @profile.schoolName %>
-    </p>
-    <p>
-      <strong>Major:</strong>
-      <%= @profile.major %>
-    </p>
-
-    <p>
-      <strong>Gender:</strong>
-      <%=  @profile.gender %>
-    </p>
-  </section>
-
-  <section id="middle">
-    <h1> Personal Preferences</h1>
-    <p>
-      <strong>Smoke:</strong>
-      <%= @profile.smoke %>
-    </p>
-
-    <p>
-      <strong>Pet:</strong>
-      <%= @profile.pet %>
-    </p>
-
-    <p>
-      <strong>Drive:</strong>
-      <%= @profile.drive %>
-    </p>
+<div class="wrapper">
 
 
-  </section>
-
-  <aside id="sidebar">
-    <h1> Personal Bio</h1>
-    <p>
-      <strong>Bio:</strong>
-      <%= @profile.bio %>
-    </p>
-  </aside>
-  <%= link_to 'Edit', edit_profile_path(@profile) %> |
-  <%= link_to 'Back', page_home_path %>
+  <div id="w">
+    <div id="content" class="clearfix">
+      <div id="userphoto">    <%= image_tag("house.jpg", alt:"Ez", class:"th about-image")%>
+      </div>
+      <div class="user_info">
 
 
+        <div class="this2">   <h1 style="font-size: 5em;color: #3db2e1;">  <%= @profile.fullname %></h1>
+        <h3> <strong>Age:</strong>
+          <%= @profile.age %></h3>
+
+        <h3> <strong>Email:</strong>
+          <%= @profile.email %></h3>
+
+        <h3> <strong>Schoolname:</strong>
+          <%= @profile.schoolName %></h3>
+
+        <h3><strong>Major:</strong>
+          <%= @profile.major %></h3>
+
+        <h3><strong>Gender:</strong>
+          <%=  @profile.gender %></h3>
+        <!-- SIDEBAR BUTTONS -->
+        <button type="button" >Follow</button>
+        <button type="button" >Message</button>
+
+        <!-- END SIDEBAR BUTTONS -->
+      </div>
+      </div>
+      <nav id="profiletabs">
+        <ul class="clearfix">
+          <li><a href="#bio" class="sel">Profile</a></li>
+          <li><a href="#activity">Activity</a></li>
+          <li><a href="#friends">Friends</a></li>
+          <li><a href="#settings">Settings</a></li>
+        </ul>
+      </nav>
+
+      <section id="bio">
+
+
+        <p>
+          <strong>Smoke:</strong>
+          <%= @profile.smoke %>
+        </p>
+
+        <p>
+          <strong>Pet:</strong>
+          <%= @profile.pet %>
+        </p>
+
+        <p>
+          <strong>Drive:</strong>
+          <%= @profile.drive %>
+        </p>
+
+        <p>
+          <strong>Bio:</strong>
+          <%= @profile.bio %>
+        </p>
+
+        <%= link_to 'Edit', edit_profile_path(@profile) %> |
+        <%= link_to 'Back', page_home_path %>
+
+
+
+      </section>
+
+      <section id="activity" class="hidden">
+        <p>Activity Tab:</p>
+
+
+      </section>
+
+      <section id="friends" class="hidden">
+        <p>Friends Tab:</p>
+
+
+      </section>
+
+      <section id="settings" class="hidden">
+
+
+        <%= render 'form' %>
+
+        <%= link_to 'Show', @profile %> |
+        <%= link_to 'Back', profiles_path %>
+      </section>
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+  <script type="text/javascript">
+    $(function(){
+      $('#profiletabs ul li a').on('click', function(e){
+        e.preventDefault();
+        var newcontent = $(this).attr('href');
+
+        $('#profiletabs ul li a').removeClass('sel');
+        $(this).addClass('sel');
+
+        $('#content section').each(function(){
+          if(!$(this).hasClass('hidden')) { $(this).addClass('hidden'); }
+        });
+
+        $(newcontent).removeClass('hidden');
+      });
+    });
+  </script>
 </div>

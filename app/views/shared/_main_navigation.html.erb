@@ -34,17 +34,15 @@
               <li><%= link_to 'SERVICES' , page_services_path %></li>
               <li><%= link_to 'CONTACT US' , page_contact_path %></li>
               <li><%= link_to 'RIDES', page_rides_path %></li>
+              <% if user_signed_in? %>
+                  <li>  <%= link_to 'Logout' , destroy_user_session_path, method: "delete"%></li>
+              <% else %>
+                  <li><%= link_to 'Login/Singup' , new_user_session_path%></li>
+              <% end %>
             </ul>
           </div>
 
-    <div id="login">
 
-      <% if user_signed_in? %>
-          <%= link_to 'Logout' , destroy_user_session_path, method: "delete"%>
-      <% else %>
-          <%= link_to 'Login/Register' , new_user_session_path%>
-      <% end %>
-    </div>
 
   </div>
 

@@ -4,12 +4,14 @@
 
   <div id="w">
     <div id="content" class="clearfix">
-      <div id="userphoto">    <%= image_tag("house.jpg", alt:"Ez", class:"th about-image")%>
+      <div id="userphoto">
+        <%=  image_tag @profile.photo.url(:large), class:"img_avatar" %>
+        <%#= image_tag("house.jpg", alt:"Ez", class:"th about-image")%>
       </div>
       <div class="user_info">
 
 
-        <div class="this2">   <h1 style="font-size: 5em;color: #3db2e1;">  <%= @profile.fullname %></h1>
+        <div class="this2">   <h1 style="font-size: 4em;color: #3db2e1;">  <%= @profile.fullname %></h1>
         <h3> <strong>Age:</strong>
           <%= @profile.age %></h3>
 

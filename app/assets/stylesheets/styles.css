@@ -38,6 +38,7 @@
   background: #3db2e1;
 }
 #cssmenu > ul > li {
+    width: 14%;
   float: left;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
@@ -56,25 +57,24 @@
 }
 #cssmenu > ul > li > a {
     padding: 25px 20px;
-    font-size: 22px;
-
+    font-size: 23px;
     height: 3.2em;
-
-  color: #ffffff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #3db2e1;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  -webkit-transform-origin: 50% 0;
-  -moz-transform-origin: 50% 0;
-  transform-origin: 50% 0;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+    padding-left: 0;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #3db2e1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 #cssmenu > ul > li.active > a {
   color: #dff2fa;

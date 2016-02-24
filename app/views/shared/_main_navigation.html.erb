@@ -1,16 +1,24 @@
 
 <div class="row">
-  <div class="columns large-12  header-logo"> <a href="home.html"> <%= image_tag("logo.png", alt:"") %></a> </div>
+  <div class="columns large-12  header-logo">
+    <!---->
+    <!--<a href="home.html"> <%= image_tag("logo.png", alt:"") %></a>-->
+
+  </div>
+
+  <div id="axis" class="two">
+    <%= image_tag("logo.png", alt:"moving_car", class:"object van move-left", width:"80", height:"80" ) %>
+  </div>
+
+
+
+
+
+
+
+
   <div class="columns large-12">
 
-    <div id="login">
-
-      <% if user_signed_in? %>
-          <%= link_to 'Logout' , destroy_user_session_path, method: "delete"%>
-      <% else %>
-          <%= link_to 'Login/Register' , new_user_session_path%>
-      <% end %>
-    </div>
 
 
 
@@ -21,14 +29,21 @@
               <% if user_signed_in? %>
                 <li><%= link_to 'PROFILE' , profile_path(current_user.id) %></li>
               <% else %>
-                  <li><%= link_to 'PROFILE' , new_profile_path %></li>
+                  <li><%= link_to 'PROFILE' , new_user_session_path %></li>
               <% end %>
               <li><%= link_to 'SERVICES' , page_services_path %></li>
               <li><%= link_to 'CONTACT US' , page_contact_path %></li>
               <li><%= link_to 'RIDES', page_rides_path %></li>
+              <% if user_signed_in? %>
+                  <li>  <%= link_to 'Logout' , destroy_user_session_path, method: "delete"%></li>
+              <% else %>
+                  <li><%= link_to 'Login/Sign-Up' , new_user_session_path%></li>
+              <% end %>
             </ul>
           </div>
 
 
+
   </div>
+
 </div>

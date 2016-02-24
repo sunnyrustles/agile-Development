@@ -11,22 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160212054145) do
+ActiveRecord::Schema.define(version: 20160219180021) do
 
   create_table "profiles", force: :cascade do |t|
     t.string   "fullname"
     t.integer  "age"
     t.string   "email"
     t.string   "major"
-    t.boolean  "gender"
+    t.string   "gender"
     t.string   "schoolName"
     t.boolean  "smoke"
     t.boolean  "pet"
     t.boolean  "drive"
     t.text     "bio"
     t.string   "avatar"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   create_table "users", force: :cascade do |t|
@@ -40,6 +44,10 @@ ActiveRecord::Schema.define(version: 20160212054145) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end

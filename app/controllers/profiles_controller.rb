@@ -12,7 +12,9 @@ class ProfilesController < ApplicationController
   # GET /profiles/1.json
   def show
     @profile = Profile.exists?( :id => params[:id])
-    if ! @profile
+    if @profile
+      set_profile
+    else
       redirect_to new_profile_path
     end
     set_profile
@@ -75,6 +77,6 @@ class ProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
-      params.require(:profile).permit(:fullname, :age, :email, :major, :gender, :schoolName, :smoke, :pet, :drive, :bio, :avatar)
+      params.require(:profile).permit(:fullname, :age, :email, :major, :gender, :schoolName, :smoke, :pet, :drive, :bio, :avatar, :photo)
     end
 end

@@ -17,6 +17,7 @@ class ProfilesController < ApplicationController
     else
       redirect_to new_profile_path
     end
+    set_profile
   end
 
   # GET /profiles/new

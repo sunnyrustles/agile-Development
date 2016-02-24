@@ -33,7 +33,7 @@
               <% end %>
               <li><%= link_to 'SERVICES' , page_services_path %></li>
               <li><%= link_to 'CONTACT US' , page_contact_path %></li>
-              <li><%= link_to 'RIDES', page_rides_path %></li>
+              <li><%= link_to 'RIDES', rides_path %></li>
               <% if user_signed_in? %>
                   <li>  <%= link_to 'Logout' , destroy_user_session_path, method: "delete"%></li>
               <% else %>

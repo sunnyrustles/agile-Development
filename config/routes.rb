@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :rides
   resources :profiles
   devise_for :users
   get 'page/navigate'

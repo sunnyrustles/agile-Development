@@ -13,8 +13,15 @@
  *= require_tree .
  *= require_self
  *= require_colorbox
- */
+ *= require jquery.jcrop
 
+/* *= require_stylesheet
+/**= require_styles*/
+ /**= require_page*/
+ /**= require_scaffolds*/
+ /**= require_menu*/
+ /**= require_user_styles*/
+ /**= require_profiles*!/*/
 
 .header-logo
 {

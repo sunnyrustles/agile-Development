@@ -29,7 +29,12 @@
         <%= f.text_area :bio %>
 
         <%= f.label :photo %>
-        <%= f.file_field :photo %>
+        <!--<#%= f.file_field :photo %>-->
+            <%= f.cropbox :photo %>
+            <%= f.crop_preview :photo %>
+            <!--<#%= f.submit 'Save' %>-->
+
+
 
       </div>
       <div class="field gender-field">

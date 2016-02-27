@@ -1,5 +1,9 @@
 source 'http://rubygems.org'
 
+group :production do
+  # gem 'unicorn'
+  # gem 'pg'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
@@ -18,6 +22,7 @@ gem 'devise'
 gem 'faker'
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
 gem 'image_magick', '~> 0.1.9'
+gem 'papercrop'
 gem 'coffee-script-source', '1.8.0'
 
 # Use jquery as the JavaScript library

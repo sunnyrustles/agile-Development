@@ -22,14 +22,18 @@ Rails.application.configure do
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
-  config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
+
+  # sm ??? forcing this temporarily
+  #config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
+  config.serve_static_assets = true
+  config.assets.compile = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  #config.assets.compile = false
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
@@ -76,4 +80,25 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # sm??? adding this from development.rb
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      address:              'smtp.gmail.com',
+      port:                 587,
+      domain:               'gmail.com',
+      user_name:            'needarideWebmaster@gmail.com',
+      password:             'agile2016',
+      authentication:       'plain',
+      enable_starttls_auto: true  }
+
+
+  #config.assets.raise_runtime_errors = true
+  config.action_mailer.default_url_options = { host: '159.203.250.174' }
+  # Raises error for missing translations
+  # config.action_view.raise_on_missing_translations = true
+
+ Paperclip.options[:command_path] = "/usr/local/bin/"
+
 end

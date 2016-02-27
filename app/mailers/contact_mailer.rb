@@ -1,12 +1,12 @@
 class ContactMailer < ApplicationMailer
-  default from: 'notifications@example.com'
+  default from: 'needarideWebmaster@gmail.com'
 
   def contact_email(name, email, subject, message)
     @email = email
     @name = name
     @subject = subject
     @message = message
-    @url = 'http://localhost:3000/page/home' #fix this when published sm???
+    @url = 'http://159.203.250.174/page/home'
     mail(to: @email, subject: 'Thank for for contacting CollegeRides.com')
   end
 

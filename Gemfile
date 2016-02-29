@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
 group :production do
-  # gem 'unicorn'
-  # gem 'pg'
+   gem 'unicorn'
+   gem 'pg'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
